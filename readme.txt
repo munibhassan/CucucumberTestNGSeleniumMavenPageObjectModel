@@ -17,6 +17,9 @@ Please clone "https://github.com/munibhassan/CucucumberTestNGSeleniumMavenPageOb
 2nd Step
 Checkout Master Branch
 
+3rd Step
+Set Drivers path from Hooks.java file.
+
 Project Reference:
 https://jasper-bi-suite.blogspot.com/2022/07/page-object-model-pom-in-cucumber-with.html
 
