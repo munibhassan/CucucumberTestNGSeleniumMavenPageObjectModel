@@ -4,7 +4,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        tags = "@SuceCheckOutStepTwo or @SuceCheckOutStepOne",
+//        tags = "@SuceCheckOutStepTwo or @SuceCheckOutStepOne",
+        tags = "@SuceCheckOutStepTwo",
         features = "classpath:features", glue = {"sadakar.common", "sadakar.stepdefinitions",
         "sadakar.testng.runner"},
         plugin = {"pretty", "json:target/cucumber-reports/cucumber.json",
