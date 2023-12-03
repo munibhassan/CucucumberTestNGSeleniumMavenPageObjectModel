@@ -30,9 +30,12 @@ public class InventoryPOM {
     }
 
     public By xpathProductName(String productName) {
-        By addToCartBtnLocator = By.xpath("//div[@class='inventory_item'][.//div[@class='inventory_item_name' and text()='" + productName + "']]//button[contains(@class, 'btn_inventory')]");
+        By addToCartBtnLocator;
+       // addToCartBtnLocator = By.xpath("//div[@class='inventory_item'][.//div[@class='inventory_item_name' and text()='" + productName + "']]//button[contains(@class, 'btn_inventory')]");
+          addToCartBtnLocator = By.xpath("//div[@class='inventory_item'][.//div[contains(@class, 'inventory_item_name') and text()='"+ productName +"']]//button[contains(@class, 'btn_inventory')]");
         return addToCartBtnLocator;
     }
+
 
     public void ClickOnProduct(String productName) {
         By addToCartBtnLocator = xpathProductName(productName);
